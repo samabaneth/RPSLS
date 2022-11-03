@@ -7,7 +7,7 @@ class Game:
         self.player_two = AI(2) # None
     
     def rules(self):
-        print('Scissors decapitate Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors')
+        print('\nScissors decapitate Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors\n')
     
     def choose_game_mode(self):
         pass
@@ -23,14 +23,15 @@ class Game:
 
     def winner(self):   
         if self.player_one.score <= 0:
-            print('\nSorry, you lost.')
+            print('\nSorry, you lost.\n')
         if self.player_two.score <= 0:
-            print('\nCongratulations, you win!')
+            print('\nCongratulations, you win!\n')
 
     def run_game(self):
         self.rules()
         self.choose_game_mode()
         self.game()
+        self.winner()
         
 
         
