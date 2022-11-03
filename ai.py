@@ -1,8 +1,8 @@
 from player import Player
 import random
 class AI(Player):
-    def __init__(self, gesture):
-        super().__init__(gesture)
+    def __init__(self):
+        super().__init__(self)
     
     def ai_gesture(self):
         self.gesture = self.gestures_list
