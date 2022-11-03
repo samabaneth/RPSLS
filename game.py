@@ -19,10 +19,13 @@ class Game:
             if self.player_one.gesture == self.player_two.gesture:
                 print("its a tie, keep playing")
             if (self.player_one.gesture == "rock" and self.player_two.gesture == "scissors") or (self.player_one.gesture == "rock" and self.player_two.gesture == "lizard") or (self.player_one.gesture == "lizard" and self.player_two.gesture == "spock"):
-                self.player_one.score -= 1
+                self.player_two.score -= 1
 
     def winner(self):   
-        pass
+        if self.player_one.score <= 0:
+            print('\nSorry, you lost.')
+        if self.player_two.score <= 0:
+            print('\nCongratulations, you win!')
 
     def run_game(self):
         self.rules()
