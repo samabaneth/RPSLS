@@ -1,9 +1,8 @@
 from player import Player
 
 class Human(Player):
-    def __init__(self, gesture):
+    def __init__(self, score):
         super().__init__(self)
-        self.human =
 
     
     def throw_gesture(self):

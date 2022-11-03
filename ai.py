@@ -1,7 +1,7 @@
 from player import Player
 import random
 class AI(Player):
-    def __init__(self):
+    def __init__(self, score):
         super().__init__(self)
     
     def ai_gesture(self):
