@@ -6,5 +6,6 @@ class Human(Player):
 
     
     def throw_gesture(self):
-        player = input('Pick:' + self.gestures_list)
+        self.player = input('Pick:' + self.gestures_list)
+
         

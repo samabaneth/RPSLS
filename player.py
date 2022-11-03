@@ -5,5 +5,6 @@ class Player:
     def gesture(self):
         self.gestures_list = ["rock", "paper", "scissors", "lizard", "spock"]
 
+
     
     
