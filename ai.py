@@ -5,5 +5,5 @@ class AI(Player):
         super().__init__(score)
     
     def choose_gesture(self):
-        self.gesture = random.choice(self.gestures_list)
+        self.gesture = random.randint(self.gestures_list)
         print('AI played: '+ self.gesture)
