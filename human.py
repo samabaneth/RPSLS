@@ -2,7 +2,7 @@ from player import Player
 
 class Human(Player):
     def __init__(self, score):
-        super().__init__(self)
+        super().__init__(score)
 
     
     def choose_gesture(self):
